@@ -626,12 +626,12 @@ html {
   border-width: 0;
 }
 
-.absolute{
-  position: absolute;
+.invisible{
+  visibility: hidden;
 }
 
-.relative{
-  position: relative;
+.absolute{
+  position: absolute;
 }
 
 .sticky{
@@ -661,10 +661,6 @@ html {
 
 .hidden{
   display: none;
-}
-
-.h-full{
-  height: 100%;
 }
 
 .h-1{
@@ -757,6 +753,10 @@ html {
   padding: 1rem;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -812,11 +812,19 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:bg-white\/10:hover{
-  background-color: rgb(255 255 255 / 0.1);
+.hover\:bg-white\/5:hover{
+  background-color: rgb(255 255 255 / 0.05);
 }
 
 .hover\:text-zinc-200:hover{
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:visible{
+  visibility: visible;
+}
+
+.group:hover .group-hover\:block{
+  display: block;
 }
