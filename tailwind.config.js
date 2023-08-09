@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {},
-  plugins: [],
+  plugins: [require("./plugins/openVariant")],
   variants: {
     extend: {
       backgroundColor: ["active"],
